@@ -3,16 +3,16 @@ using namespace std;
 int main(){
 	int a,b,temp,num[200],i,n;
 	double sum,avg;
-	cout<<"ÇëÊäÈë·¶Î§aºÍb£º";
+	cout<<"è¯·è¾“å…¥èŒƒå›´aå’Œbï¼š";
 	cin>>a>>b;
-	cout<<"ÇëÊäÈëÊı×Ö¸öÊı£º";
+	cout<<"è¯·è¾“å…¥æ•°å­—ä¸ªæ•°ï¼š";
 	cin>>n;
 	if(a>b){
 		temp=a;
 		a=b;
 		b=temp;}
 	sum=0;
-	cout<<"ÇëÊäÈë"<<n<<"¸ö"<<a<<"Óë"<<b<<"Ö®¼äµÄÅ¼Êı:"<<endl;
+	cout<<"è¯·è¾“å…¥"<<n<<"ä¸ª"<<a<<"ä¸"<<b<<"ä¹‹é—´çš„å¶æ•°:"<<endl;
 	for(i=0;i<n;){
 		cin>>num[i];
 		if(num[i]>=a&&num[i]<=b&&num[i]%2==0)
@@ -21,8 +21,8 @@ int main(){
 			i++;}
 	}
 	avg=sum/n;
-	cout<<"Æ½¾ùÖµÎª£º"<<avg<<endl;
-	cout<<"ÄãËùÊäÈëµÄ"<<n<<"¸öÓĞĞ§ÖµÎª£º"<<endl;
+	cout<<"å¹³å‡å€¼ä¸ºï¼š"<<avg<<endl;
+	cout<<"ä½ æ‰€è¾“å…¥çš„"<<n<<"ä¸ªæœ‰æ•ˆå€¼ä¸ºï¼š"<<endl;
 	for(i=i-1;i>=0;i--)
 		cout<<num[i]<<'\t';
 	cout<<endl;
