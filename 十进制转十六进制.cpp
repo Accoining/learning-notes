@@ -12,7 +12,7 @@ int main(){
         if(dig[i]<10)
             cout<<char(dig[i]+'0');
         else
-            cout<<char(dig[i]+'a');
+            cout<<char(dig[i]-10+'a');
     }
     return 0;
 }
